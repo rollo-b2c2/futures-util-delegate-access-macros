@@ -5,6 +5,8 @@ edition = "2024"
 description = "Copy and pasted macros from the futures_utils library used for creating combinators"
 authors = ["Futures-rs developers", "rollo@b2c2.com"]
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/rollo-b2c2/futures-util-delegate-access-macros"
+homepage = "https://github.com/rollo-b2c2/futures-util-delegate-access-macros"
 
 [dependencies]
 pin-project-lite = "0.2"
