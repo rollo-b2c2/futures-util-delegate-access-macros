@@ -1,0 +1,10 @@
+[package]
+name = "futures-util-delegate-access-macros"
+version = "0.3.0"
+edition = "2024"
+description = "Copy and pasted macros from the futures_utils library used for creating combinators"
+authors = ["Futures-rs developers", "rollo@b2c2.com"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+pin-project-lite = "0.2"
