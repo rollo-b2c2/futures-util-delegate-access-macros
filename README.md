@@ -17,9 +17,9 @@ This crate intentionally does not try to “improve” or redesign anything. It�
 | `delegate_access_inner!($field, $inner_ty, ($($ind)*))` | Generates `get_ref`, `get_mut`, `get_pin_mut`, `into_inner` accessors, optionally threading through nested wrappers via the `$ind` tokens. |
 | `delegate_all!` | “Macro that writes the wrapper type” pattern: declares a `pin_project!`’d struct with an `inner` field and can implement `Future`/`Stream`/`Fused*`/`Sink`/`Debug` plus `AccessInner` and `new(...)` helpers, depending on the invocation form. |
 
-## Dependency
+## Installation
 
-Add this crate, and then add whatever traits you actually want to implement (`futures-core`, `futures-sink`, etc.) in your crate as normal.
+Starting at version `0.3` to match the futures-rs versioning system.
 
 This crate re-exports `pin-project-lite` as a hidden item so macro expansions can refer to `$crate::_pin_project_lite` without forcing downstream crates to depend on `pin-project-lite` directly.
 
